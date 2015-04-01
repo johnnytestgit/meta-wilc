@@ -10,7 +10,7 @@ S = "${WORKDIR}/git"
 
 do_install() {
   install -d  ${D}/lib/firmware/atmel/
-	cp -r wilc* ${D}/lib/firmware/atmel/
+  install -m 0755 wilc* ${D}/lib/firmware/atmel/
 }
 
 FILES_linux-firmware-atmel += " \
