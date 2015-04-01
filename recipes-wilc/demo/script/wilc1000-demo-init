@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+start() {
+  ifconfig wlan0 up
+  hostapd /etc/wilc_hostapd.conf -B &
+}
+
+stop() {
+  killall hostapd
+}
+
+case "$1" in
+  start)
+    start
+  ;;
+  stop)
+    stop
+  ;;
+  *)
+  ;;
+esac
