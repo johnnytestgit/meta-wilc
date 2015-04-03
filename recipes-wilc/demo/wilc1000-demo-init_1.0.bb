@@ -6,7 +6,10 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/script:"
 SRC_URI = " \
   file://wilc1000-demo-init \
   file://wilc_hostapd.conf \
-  file://wilc_wpa_supplicant.conf"
+  file://wilc_wpa_supplicant.conf \
+  file://wilc_udhcpd.conf "
+
+S = "${WORKDIR}"
 
 inherit update-rc.d allarch
 

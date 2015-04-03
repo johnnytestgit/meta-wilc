@@ -9,7 +9,7 @@ PACKAGES =+ "linux-firmware-atmel"
 S = "${WORKDIR}/git"
 
 do_install() {
-  install -d  ${D}/lib/firmware/atmel/
+  install -d ${D}/lib/firmware/atmel/
   install -m 0755 wilc* ${D}/lib/firmware/atmel/
 }
 
