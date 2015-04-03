@@ -23,7 +23,7 @@ EXTRA_OEMAKE = '-C ${STAGING_KERNEL_DIR} M=${S} \
   '
 
 do_install() {
-  install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless/atmel/wlic1000
+  install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless/atmel/wilc1000
   install -m 0644 wilc1000${KERNEL_OBJECT_SUFFIX} ${D}${base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless/atmel/wilc1000
 }
 
