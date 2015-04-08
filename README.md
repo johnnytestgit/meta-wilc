@@ -17,7 +17,7 @@
   - chrpath
   - libsdl1.2-dev
   - pandoc
-  - makeinfo
+  - texinfo
 3. local.conf
   - IMAGE_INSTALL_append += " \
   - hostapd \
